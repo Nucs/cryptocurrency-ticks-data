@@ -8,7 +8,7 @@
 The data is stored inside a regular zip file. inside every zip there is a .csv file in plain text.<br>
 The data consists of the following columns:
 1. Id - id provided by the exchange
-2. time - epoch time, UTC. There might be a 1-3h offset accidentally added by C# automatic localization of DateTime. I have no way to verify if this is true.
+2. time - epoch time, UTC. There might be a 1-3h (consistent) offset accidentally added by C# automatic localization of DateTime. I have no way to verify if this is true.
 3. Price - The price in the rhs symbol (e.g. BTCUSDT means price is in USDT)
 4. Quantity - Quantity of the lhs symbol (e.g. BTCUSDT means quantity in BTC)
 5. IsBuyerMaker - was the trade completed by the buyer (true) or by the seller (false). 
