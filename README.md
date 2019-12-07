@@ -16,4 +16,4 @@ The data consists of the following columns:
     when it is false, it means that the buyer has placed a bid for his more curreny and a seller came along later on and completed the trade.
 6. BuyerOrderId - Order id of the buyer
 7. SellerOrderId - Order id of the seller
-8. Was the Maker (buyermaker or sellermaker) accomplish the trade by a market order (I might be wrong tho.)
+8. IsBestPriceMatch - Was the Maker (buyermaker or sellermaker) accomplish the trade by a market order (I might be wrong tho.) as opposed to a trade accomplished by a limit order which waits for an opposite trade pair.
