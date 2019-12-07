@@ -3,7 +3,9 @@
 
 550 days of trade ticks on BTC/ETH/LTC/NEO to USDT
 ![alt text](https://i.imgur.com/wRK5UBW.png)
-The data is stored inside a regular zip file.
+<br><br>
+
+The data is stored inside a regular zip file. inside every zip there is a .csv file in plain text.<br>
 The data consists of the following columns:
 1. Id - id provided by the exchange
 2. time - epoch time, UTC.
