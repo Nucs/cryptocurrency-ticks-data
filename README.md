@@ -1,7 +1,7 @@
 # cryptocurrency-ticks-data
 ---
 
-550 days of trade ticks on BTC, ETH, LTC, BNB, NEO, QTUM to USTD or BTC
+590 days of trade ticks on BTC, ETH, LTC, BNB, NEO, QTUM to USTD or to BTC
 ![alt text](https://i.imgur.com/wRK5UBW.png)
 <br><br>
 
