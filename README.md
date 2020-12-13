@@ -17,3 +17,7 @@ The data consists of the following columns:
 6. BuyerOrderId - Order id of the buyer
 7. SellerOrderId - Order id of the seller
 8. IsBestPriceMatch - Has the Maker (buyermaker or sellermaker) accomplished the trade by a market order as opposed to a trade accomplished by a limit order which waits for an opposite trade pair (I might be wrong tho, this need verification).
+
+---
+## Historical Daily Data
+[tuangeek/cryptocurrency-historical-data](https://gitlab.com/tuangeek/cryptocurrency-historical-data) published and updates free Daily OHLC data since 2013 for Bitfinex Exchange. 
