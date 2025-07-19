@@ -14,14 +14,16 @@ This repository contains **590+ days** of cryptocurrency trade tick data spannin
 ### Data Structure
 
 Each trade record contains the following fields:
-- `Id`: Trade ID provided by the exchange
-- `time`: Epoch timestamp in UTC (may have 1-3h offset)
-- `Price`: Price in the quote currency (e.g., USDT for BTCUSDT)
-- `Quantity`: Quantity in the base currency (e.g., BTC for BTCUSDT)
-- `IsBuyerMaker`: True if buyer initiated, False if seller initiated
-- `BuyerOrderId`: Order ID of the buyer
-- `SellerOrderId`: Order ID of the seller
-- `IsBestPriceMatch`: Whether trade was executed via market order
+1. `Id` - id provided by the exchange
+2. `time` - epoch time, UTC. There might be a 1-3h (consistent) offset accidentally added by C# automatic localization of DateTime. I have no way to verify if this is true.
+3. `Price` - The price in the rhs symbol (e.g. BTCUSDT means price is in USDT)
+4. `Quantity` - Quantity of the lhs symbol (e.g. BTCUSDT means quantity in BTC)
+5. `IsBuyerMaker` - was the trade completed by the buyer (true) or by the seller (false). 
+   when it is true, it means that the seller has placed a ask for his holdings and a buyer came along later on and completed the trade.
+   when it is false, it means that the buyer has placed a bid for his curreny and a seller came along later on and completed the trade.
+6. `BuyerOrderId` - Order id of the buyer
+7. `SellerOrderId` - Order id of the seller
+8. `IsBestPriceMatch` - Has the Maker (buyermaker or sellermaker) accomplished the trade by a market order as opposed to a trade accomplished by a limit order which waits for an opposite trade pair (I might be wrong tho, this need verification).
 
 ## 🚀 Quick Start
 
